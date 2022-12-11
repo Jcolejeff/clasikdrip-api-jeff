@@ -25,21 +25,22 @@
       "type": "richtext"
     },
     "price": {
-      "type": "biginteger"
+      "type": "integer"
     },
     "stock": {
       "type": "integer",
       "default": 1
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "sizes": {
       "type": "json"
