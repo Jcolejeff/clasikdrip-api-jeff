@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clasikdrips",
+  "info": {
+    "singularName": "clasikdrip",
+    "pluralName": "clasikdrips",
+    "displayName": "clasikdrip",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "stock": {
+      "type": "integer",
+      "default": 1
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "sizes": {
+      "type": "json"
+    },
+    "colors": {
+      "type": "json"
+    },
+    "slide": {
+      "type": "boolean"
+    },
+    "shipping": {
+      "type": "boolean"
+    },
+    "featured": {
+      "type": "boolean"
+    }
+  }
+}
